@@ -18,7 +18,7 @@ public class AlgorithmsApplication {
         System.out.println("Result BFS algorithm: " + Arrays.toString(BFSProblem()));
         System.out.println("Result DFS algorithm: " + Arrays.toString(DFSProblem()));
         System.out.println("Result Dijkstra algorithm: " + Arrays.toString(DijkstraProblem()));
-        System.out.println("Result Max Heapify:" + Arrays.toString(maxHeapify()));
+        System.out.println("Result Max Heapify:" + Arrays.toString(heapSort()));
         System.out.println("Result Quick Sorty:" + Arrays.toString(quickSortProblem()));
     }
 
@@ -200,7 +200,7 @@ public class AlgorithmsApplication {
      * Max Heap
      * @return sorted array
      */
-    private static int[] maxHeapify() {
+    private static int[] heapSort() {
         System.out.println("--------------------");
         System.out.println("Exercise 7: Returns sorted array");
         // int[] arr = new int[]{50,30,20,15,10,8,16, 60};
