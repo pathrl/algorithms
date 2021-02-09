@@ -13,7 +13,7 @@ public class QuickSort {
 
             int pivot = partition(low, high);
             doQuickSort(low, pivot);
-            doQuickSort(pivot+1, high);
+            doQuickSort(pivot + 1, high);
         }
 
         return arr;
@@ -27,11 +27,11 @@ public class QuickSort {
         while (i < j) {
             do {
                 i++;
-            } while(arr[i] <= pivot);
+            } while(i < arr.length && arr[i] <= pivot);
 
             do {
                 j--;
-            } while(arr[j] > pivot);
+            } while(j > -1 && arr[j] > pivot);
 
             if (i < j) swap(i, j);
         }
