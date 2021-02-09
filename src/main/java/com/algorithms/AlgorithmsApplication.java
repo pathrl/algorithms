@@ -12,14 +12,14 @@ import java.util.Arrays;
 public class AlgorithmsApplication {
 
     public static void main(String[] args) {
-        /*System.out.println("Result peak number: " + peakFinderProblem());
+        System.out.println("Result peak number: " + peakFinderProblem());
         System.out.println("Result merge sort algorithm: " + Arrays.toString(mergeSortProblem()));
-        System.out.println("Result karp-robin algorithm: " + karpRobinProblem());*/
+        System.out.println("Result karp-robin algorithm: " + karpRobinProblem());
         System.out.println("Result BFS algorithm: " + Arrays.toString(BFSProblem()));
         System.out.println("Result DFS algorithm: " + Arrays.toString(DFSProblem()));
-        /*System.out.println("Result Dijkstra algorithm: " + Arrays.toString(DijkstraProblem()));
+        System.out.println("Result Dijkstra algorithm: " + Arrays.toString(DijkstraProblem()));
         System.out.println("Result Max Heapify:" + Arrays.toString(maxHeapify()));
-        System.out.println("Result Quick Sorty:" + Arrays.toString(quickSortProblem()));*/
+        System.out.println("Result Quick Sorty:" + Arrays.toString(quickSortProblem()));
     }
 
     /**
@@ -216,14 +216,14 @@ public class AlgorithmsApplication {
     }
 
     /**
-     * Max Heap
+     * Quick sort
      * @return sorted array
      */
     private static int[] quickSortProblem() {
         System.out.println("--------------------");
         System.out.println("Exercise 8: Returns sorted array");
-        // int[] arr = new int[]{50,30,20,15,10,8,16, 60};
-        int[] arr = new int[]{1,3,5,2,4,6,7, Integer.MAX_VALUE};
+        int[] arr = new int[]{50,30,20,15,10,8,16,60, Integer.MAX_VALUE};
+        //int[] arr = new int[]{10,16,8,12,15,6,3,9,5,Integer.MAX_VALUE};
         System.out.println("Array: " + Arrays.toString(arr));
         QuickSort quickSort = new QuickSort(arr);
         return quickSort.doQuickSort(0, arr.length);
